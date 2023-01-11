@@ -1,15 +1,19 @@
+import { useNavigate } from "react-router-dom";
+
 import './LoginButton.css';
+
 
 function LoginButton() {
 
-  const btnClick = () => {
-    console.log('hello button');
-  };
+  const movePage = useNavigate();
+  const btnClick = () =>{
+    movePage('/login')
+  }
 
   return (
     <div className="LoginButton">
       <button className="loginBtn" onClick={btnClick}>
-        버튼
+        로그인
       </button>
     </div>
   );

@@ -3,7 +3,7 @@ import './Footer.css'
 function Footer() {
     return (
       <div className='Footer'>
-        <h2>푸터</h2>
+        <h1>footer</h1>
       </div>
     );
   }
